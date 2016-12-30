@@ -1,0 +1,193 @@
+body {
+	font-family: Helvetica, Sans Serif, Times;
+
+}
+li{
+	line-height: 40px;
+	list-style-type: none;
+}
+a{
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+	color: #41C7DB;
+}
+
+i{
+	padding: 0px 10px;
+}
+.icon{
+	float: right;
+	color: grey;
+}
+
+.lists{
+	padding-left: 10px;
+}
+.page{
+	background: #41C7DB;
+}
+.header, .footer{
+	height: 80px;
+}
+.academy{
+	height: 70px;
+}
+#hamburger{
+	height:35px; 
+	width: 35px;
+	margin-top: 20px;
+    margin-left: 30px;
+}
+#hamburger div{
+	width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 1px 0;
+    border-radius: 5px;
+    font-weight: normal;
+}
+.menu{
+	font-size: 32px;
+	font-weight: bold;
+	position: absolute;
+    top: 85px;
+    left: 80px;
+    color: black;
+}
+.menu1{
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+    top: 95px;
+    left: 90px;
+    color: black;
+}
+.section1{
+	height: 400px;
+	margin-bottom: 45px;
+	padding: 10px 10px; 
+}
+.first{
+	border-radius: 10px;
+	background: #41C7DB;
+}
+.first a:hover{
+	color: grey;
+}
+.carousel-inner .item img{
+	height: 380px;
+}
+.modify{
+	font-size: 32px;
+	font-weight: bold;
+    color: black;
+}
+#form,  .form-inline, .form-group{
+	background-color: #FFF;
+	height: 380px;
+	width: 980px;
+	margin-top: -10px;
+}
+label{
+	font-size: 14px;
+	color: #333;
+	height: 15px;
+	width: 200px;
+	padding: 5px;
+	text-align: left;
+	clear: both;
+}
+
+.form-controllists{
+	height: 35px;
+	width: 700px;
+	margin-top: -2px;
+	margin-left: -50px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+label.descript{
+    text-align: left;
+    clear: both;
+    float:left;
+    margin-right:5px;
+}
+.form-controltext{
+	margin-left: -50px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+.duration{
+	height: 30px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	padding: 5px;
+
+}
+.one, .four{
+	width: 50px;
+	margin-left: -50px;
+}
+.four{
+    width: 70px;
+}
+.two{
+	width: 90px;
+	margin-left: 30px;
+}
+.three{
+	width: 130px;
+	margin-left: 35px;
+}
+.form-controlamount{
+	width: 100px;
+	height: 30px;
+}
+.form-controldot{
+	height: 15px;
+	width: 15px;
+	margin-left: -50px !important;
+}
+.butn{
+	height: 25px;
+	width:80px;
+	float: right;
+	margin-right: 150px;
+	margin-top: 30px;
+	color: black;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.fontawe{
+	float: right;
+	width: 120px;
+	height: 20px;
+}
+.mthicon1, .mthicon2{
+	width: 35px;
+	height: 20px;
+	display: inline-block;
+	margin-left: 10px;
+}
+.btns{
+	padding: 0px;
+	margin-top: 2px;
+}
+.delete, .edit, .undo{
+	color: #41C7DB;
+}
+.undo{
+	float: right;
+}
+.form_mth{
+	width: 400px;
+}
+.form-controltextedit{
+    margin-left: -50px;
+    color: black;
+}
+::-webkit-input-placeholder{
+    color: black;
+}

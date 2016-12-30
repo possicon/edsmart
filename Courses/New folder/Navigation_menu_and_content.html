@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Side Navigation Menu</title>
+		<!-- Font awesome CDN link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<!-- Main CSS stylesheet -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- Navigation header for the whole page (if necessary) -->
+		<header>
+			<h1>Your header goes here</h1>
+		</header>
+		<section>
+			<!-- Responsive Sidebar containing navigation links -->
+			<nav id="mySideNav" class="sidenav">
+				<a href="#" title="Close" class="closebtn">&times;</a>
+				<ul>
+					<div id="profile">
+						<!-- User profile picture (if necessary) -->
+						<figure class="profile-userpic">
+						  <img src="images/avatar.jpg" class="" alt="Profile Picture">
+						</figure>
+						<div class="profile-usertitle">
+						  <div id="site-user-name" class="profile-usertitle-name">
+						  	<!-- Link to where admin can view his/her profile -->
+						  	<a href="#">Adebayo Olubayo</a>
+						  </div>
+						  <div class="profile-usertitle-title">
+						  	<a href="#">Admin</a>
+						  </div>
+						</div>
+					</div><!--End profile id -->
+					<li class="active">
+						<a href="#">
+							<span class="fa fa-fw fa-home"></span>Dashboard
+						</a>
+					</li>
+					<li class="title">
+						<a href="#">
+							<span class="fa fa-user"></span>Edit Profile<span class="fa fa-fw fa-caret-down"></span>
+						</a>
+						<!-- This should be a collapsible dropdown -->
+						<ul id="submenu-1" class="fields">
+						  	<li>
+						  		<a href="#">
+						  			<span class="fa fa-envelope"></span>Change Email
+						  		</a>
+						  	</li>
+						  	<li>
+						  		<a href="#">
+						  			<span class="fa fa-picture-o"></span>Change Picture
+						  		</a>
+						  	</li>
+						  	<li>
+						  		<a href="#">
+						  			<span class="fa fa-pencil"></span>Change Password
+						  		</a>
+						  	</li>
+						</ul>
+					</li>
+					<li class="title">
+						<a href="#">
+							<span class="fa fa-user"></span>Teacher Setup<span class="fa fa-fw fa-caret-down"></span>
+						</a>
+						<!-- This should be a collapsible dropdown -->
+						<ul id="submenu-1" class="fields">
+						  	<li>
+						  		<a href="#">
+						  			<span class="fa fa-plus"></span>Add Teacher
+						  		</a>
+						  	</li>
+						  	<li>
+						  		<a href="#">
+						  			<span class="fa fa-eye"></span>View/Edit
+						  		</a>
+						  	</li>
+						</ul>
+					</li>
+					<li class="title">
+						<a href="#">
+							<span class="fa fa-university"></span>School Setup<span class="fa fa-fw fa-caret-down"></span>
+						</a>
+						<!-- This should be a collapsible dropdown -->
+						<ul id="submenu-1" class="fields">
+						  	<li>
+						  		<a href="#">
+						  			<span class="fa fa-plus"></span>Add Class(es)
+						  		</a>
+						  	</li>
+						  	<li>
+						  		<a href="#">
+						  			<span class="fa fa-eye"></span>View/Edit
+						  		</a>
+						  	</li>
+						</ul>
+					</li>
+					<li class="title">
+						<a href="#">
+							<span class="fa fa-user"></span>Academic Year Setup<span class="fa fa-fw fa-caret-down"></span>
+						</a>
+						<!-- This should be a collapsible dropdown -->
+						<ul id="submenu-1" class="fields">
+						  	<li>
+						  		<a href="#">
+						  			<span class="fa fa-plus"></span>Add Academic Year
+						  		</a>
+						  	</li>
+						  	<li>
+						  		<a href="#">
+						  			<span class="fa fa-eye"></span>View/Edit
+						  		</a>
+						  	</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-power-off"></span>Log Out
+						</a>
+					</li>
+				</ul>
+			</nav><!-- End mySideNav sidebar -->
+			<!-- Main page content for each Navigation Link -->
+			<aside id="main">
+				<h3>Content</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+				  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</aside><!-- End main content aside -->
+		</section><!-- Section end -->
+		<!-- jQuery -->
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Main JavaScript file -->
+		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
