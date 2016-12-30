@@ -1,0 +1,439 @@
+body{
+	background-color: white;
+	width: 1100px;
+	margin: 0 auto;
+}
+ul,li{
+	list-style-type: none;
+
+}
+a{
+	text-decoration: none;
+}
+/*header style*/
+#header{
+	width: 1100px;
+	height: 140px;
+	padding-top: 20px;
+}
+#headericons{
+	float: right;
+	margin-top: 5px;
+}
+#headericons li{
+	display: inline;
+	padding: 5px;
+	margin: 5px;
+}
+#img_logo{
+	width: 150px;
+	height: 170px;
+	padding-top: 10px;
+
+}
+#logo{
+	width: 150px;
+	height: 90px;
+	padding-top: 20px;
+}
+#header_list{
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 5px%;
+}
+#header_list li{
+	display: inline;
+	margin: 10px;
+	padding: 10px;
+
+}
+#header_list li a:hover{
+	margin-top: 80px;
+	text-decoration: none;
+	color: orange;
+}
+/* background imagr style*/
+#b_image{
+
+	height: 500px;
+	width: 1100px;
+	position: absolute;
+
+}
+#b_image_div{
+	height: 350px;
+	width: 800px;
+	background: rgba(0, 102, 102, 0.4);
+	position: relative;
+	margin-top: 100px;
+	margin-left: 14%;
+	border-radius: 8px;
+
+}
+#b_image_div .b_image_div1{
+	font-family: serif;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 20px;
+	color: black;
+	font-size: 35px;
+}
+#b_image_div ._div h3{
+	border: 2px solid orange;
+	width: 450px;
+	height: 50px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 20%;
+	margin-top: 45px;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+}
+#b_image_div  a{
+	text-decoration: none;
+
+}
+/**features**/
+#fea{
+	margin-top: 120px; 
+	text-align: center;
+	font-weight: bold;
+	font-family: cursive;
+	color: red;
+}
+.thumbnail{
+	margin-top: 10px; 
+	text-decoration: none;
+	border: none;
+}
+.hovereffect{
+	/*height: 100%;
+	width: 100%;*/
+	overflow: hidden;
+	cursor: default;
+	position: relative;
+}
+.hovereffect img{
+	position: relative;
+	-webkit-transition:all .5s linear;
+	transition: all .5s linear;
+}
+.hovereffect:hover img{
+	-ms-transform:scale(1.2);
+	transform: scale(1.2);
+}
+.hovereffect a{
+	text-decoration: none;
+	font-family: sans-serif;
+	color: black;
+	text-align: center;
+}
+.hovereffect a:hover{
+	color: orange;
+}
+#m_features{
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bolder;
+	background: red;
+	padding-top: 10px;
+	width: 250px;
+	border-radius: 4px;
+	margin-left: 40%;
+
+}
+#m_features a{
+	text-decoration: none;
+	color: white;
+}
+
+.p_f{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 102, 102, 0.4);
+	color: white;
+	padding: 10px;
+}
+/*slides*/
+#myCarousel{
+	margin-top: 10px;
+}
+/*wous*/
+#w_o_u_s{
+	color: red;
+	text-align: center;
+	font-family: sans-serif;
+	margin-top: 30px;
+}
+.thumbnail .para{
+	text-align: center;
+	font-family: cursive;
+	margin-top: 30px;
+}
+
+.thumbnail .users{
+	text-align: center;
+	font-family: sans-serif;
+	margin-top: 30px;
+	font-weight: bold;
+}
+#row1, #row2, #row3{
+	margin-top: 30px;
+}
+/*demo*/
+#demo{
+	text-align: center;
+	background-color:white;
+	width: 500px;
+	height: 330px;
+	border: 1px solid gray;
+	margin-left: 25%;
+	border-radius: 2px;
+	margin-top: 40px;
+}
+#d_form{
+	margin-top: 30px;
+}
+#d_form input{
+	margin-left: 20px;
+	border-radius: 2px;
+}
+#d_form #em{
+	margin-left: 11%;
+}
+
+#d_butt{
+	margin-top:40px;
+	background-color: red;
+	color: white;
+	width: 150px;
+	height: 35px;
+	border-radius: 4px;
+}
+#em{
+	margin-left: 55px;
+}
+#footer{
+	margin-top: 50px;
+}
+#footericons{
+	text-align: center;
+	margin-top: 30px;
+}
+#footericons li{
+	display: inline;
+	margin: 10px;
+
+}
+/*contact styl and signup style*/
+#c_contact{
+	height: 720px;
+	width: 800px;
+	background-color: rgba(244, 245, 245);
+	margin: 0 auto;
+	border-radius: 4px;
+	margin-top: 40px;
+	border: 1px solid black;
+}
+#c_form{
+
+
+}
+#c_form2{
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 20px;
+
+}
+.c_form3{
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 40px;
+
+}
+#c_form input{
+	width: 300px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+   padding-top: 10px;
+   margin-left: 30px;
+
+}
+
+#c_form label{
+	width: 300px;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+   padding-top: 30px;
+   text-decoration: none;
+   margin-left: 30px;
+}
+
+#c_form .t_area{
+	width: 300px;
+	height: 100px;
+	margin-left: 25px;
+}
+
+#c_form #t_c{
+	background-color:red;
+	color: white;
+	width: 300px;
+}
+
+#c_form #c_submit {
+    width: 400px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:0 auto;
+    margin-top: 40px;
+    margin-left: 60%;
+}
+#c_form .c_input{
+	 box-shadow: 4px lightgray;
+}
+#c_submit:hover {
+    background-color: #45a049;
+}
+
+#bc_image{
+	
+	background-image: url("img/bc1.jpg");
+	
+}
+#s_contact{
+	height: 820px;
+	width: 700px;
+	background-color: rgba(244, 245, 245);
+	margin: 0 auto;
+	border-radius: 4px;
+	margin-top: 40px;
+	border: 1px solid gray;
+
+}
+
+#c_form #s_submit {
+    width: 400px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:0 auto;
+    margin-top: 40px;
+    margin-left: 25%;
+}
+
+#s_submit:hover {
+    background-color: #45a049;
+}
+  
+  /*--modal--*/
+.modal-content{
+	background-color:white;
+	width: 400px;
+	
+
+}
+
+form .m_lab{
+	margin-top: 20px;
+	padding-left: 0px;
+	color:blue;
+	margin-right: 60%;
+}
+
+.modal-title{
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: red;
+	font-size: 20px;
+}
+.m_input{
+	width: 300px;
+	height: 30px;
+	background: white;
+	box-shadow: 3px lightgray;
+	border-radius: 4px;
+}
+.modal_f{
+	width: 200px;
+	text-align: center;
+	background: red;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-left: 15%;
+}
+.m_checkbox{
+
+	margin-top: 15%;
+	margin-right: 50%;
+
+
+}
+
+.modal-footer{
+	margin-right: 20%;
+}
+/*about stye*/
+#about{
+	text-align: justify;
+	font-family: sans-serif;
+	line-height: 30px;
+	margin-top: 25%;
+}
+
+#a_image{
+	position: absolute;
+}
+#a_p{
+	position: relative;
+	font-weight: bold;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	margin-top: 25%;
+}
+/*download styl*/
+#d_button{
+	width: 200px;
+	height: 50px;
+	margin-left: 40%;
+	margin-top: 5%;
+	background-color: red;
+	color: white;
+	border-radius: 8px;
+}
+
+#space{
+	height: 150px;
+	width: 100%;
+	background-color: white;
+}
+#terms{
+	display: none;
+	text-align: justify;
+	width: 400px;
+	padding-left: 35px;
+}
+
