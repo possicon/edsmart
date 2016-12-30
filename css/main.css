@@ -1,0 +1,119 @@
+
+body{
+	background: white;
+}
+.container{
+	width: 85%;
+	margin: 5px auto;
+	font-family: Roboto,Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	background: white;
+}
+#student_well{
+	height: 150px;
+}
+#student_info{
+	float: left;
+
+}
+#student_status{
+	width: 60px;
+	height: 30px;
+	border-radius: 4px;
+	float: right;
+	background: green;
+	text-align: center;
+	padding:5px 5px;
+	margin-top: 25px;
+	color: white;
+
+}
+#bak-home{
+	width: 60px;
+	height: 30px;
+	border-radius: 4px;
+	float: right;
+	background: black;
+	text-align: center;
+	padding:5px 5px;
+	margin-top: 25px;
+	color: white;
+
+}
+.glyphicon-plus-sign{
+	font-size: 25px;
+}
+.student_tab{
+	margin-top: 10px;
+}
+th,tr,td{
+	border: 2px solid black;
+	text-align: center;
+}
+ul.big a{
+	width:300px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#profile{
+	float: left;
+
+
+}
+#passport{
+	float: right;
+}
+.tab-content{
+	margin-top: 15px;
+}
+#profile-btn{
+	text-align: center;
+}
+.passport-img{
+	margin-bottom: 15px;
+}
+#course-sort{
+	float: right;
+	margin-bottom: 15px;
+}
+#course-list{
+	clear: right;
+	
+}
+.course-sort2{
+	width: 200px;
+}
+.course-title{
+	float: left;
+	width: 550px;
+	margin-left: 15px;
+
+}
+.course-detail{
+	float: left;
+
+}
+.join-class{
+	float: right;
+	margin-right: 25px;
+
+}
+#course-details{
+	float: left;
+	width: 50%;
+}
+#instructor-info{
+	float: right;
+	width:50%;
+}
+#instructor-passport{
+	float: right;
+}
+#instructor-info2{
+	text-align: center;
+	width: 75%;
+	float: left;
+}
+#pagi{
+	margin-right:35%;
+}

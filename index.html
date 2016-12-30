@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Edsmart</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div class="container">
+		<hr id="header_indicator">
+		<div class="well" id="student_well">
+			<div id="student_info">
+				<h3>Sudent's Name</h3>
+				<p>other information concering the student</p>
+			</div>
+			<span id="student_status">Active</span>
+		</div>
+		<div id=student_tabs>
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs big" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#Profile" aria-controls="Profile" role="tab" data-toggle="tab">Profile</a>
+					</li>
+					<li role="presentation">
+						<a href="#courses" aria-controls="tab" role="tab" data-toggle="tab">Courses</a>
+					</li>
+					<li role="presentation">
+						<a href="#information" aria-controls="tab" role="tab" data-toggle="tab">Information</a>
+					</li>
+				</ul>
+			
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="Profile">
+						<div id="profile">
+							<form action="" method="POST" role="form" class="form-horizontal">
+								<div class="form-group">
+								<legend>Student's Data</legend>
+									<label for="" class="col-sm-2 control-label">FirstName: </label>
+									<div class="col-sm-10">
+									<input type="text" class="form-control" id="student-firstname" placeholder="firstname" value="Sandra" disabled="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">LastName:</label>
+									<div class="col-sm-10">
+									<input type="text" class="form-control" id="student-lastname" placeholder="LastName" value="Onah" disabled>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">UserName:</label>
+									<div class="col-sm-10">
+									<input type="text" class="form-control" id="student-username" placeholder="UserName" value="sandy" disabled>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Email:</label>
+									<div class="col-sm-10">
+									<input type="email" class="form-control" id="student-email" placeholder="Email Address" value="sandy234@gmail.com" disabled>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">PassWord:</label>
+									<div class="col-sm-10">
+									<input type="password" class="form-control" id="student-password" placeholder="password" value="xoxojjjjj" disabled>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Address:</label>
+									<div class="col-sm-10">
+									<textarea cols="60" rows="6" class="form-control" value="" disabled id="student-address">No 10 Alara Sabo</textarea>
+									</div>
+								</div>
+							
+							
+							
+								
+							
+								
+							</form>
+							<div class="modal fade" id="edit-profile">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title">Edit Profile</h4>
+										</div>
+										<div class="modal-body">
+										<form action="" method="POST" role="form" class="form-horizontal">
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">FirstName: </label>
+									<div class="col-sm-10">
+									<input type="text" class="form-control" id="estudent-firstname" placeholder="firstname" value="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">LastName:</label>
+									<div class="col-sm-10">
+									<input type="text" class="form-control" id="estudent-lastname" placeholder="LastName" value="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">UserName:</label>
+									<div class="col-sm-10">
+									<input type="text" class="form-control" id="estudent-username" placeholder="UserName" value="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Email:</label>
+									<div class="col-sm-10">
+									<input type="email" class="form-control" id="estudent-email" placeholder="Email Address" value="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">PassWord:</label>
+									<div class="col-sm-10">
+									<input type="password" class="form-control" id="estudent-password" placeholder="password" value="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Address:</label>
+									<div class="col-sm-10">
+									<textarea cols="60" rows="6" class="form-control" id="estudent-address"></textarea>
+									</div>
+								</div>
+							
+							
+							
+								
+							
+								
+							</form>
+											
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary" id="save-profile" data-dismiss="modal">Save</button>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="passport">
+							<img src="test.jpg" width="200px" height="200px" id="passport-img">
+							<input type="file" name="" value="upload" id="filo">
+						</div>
+						<div style="clear: both;"></div>
+						<div id="profile-btn">
+						<input type="button" class="btn btn-primary btn-lg" value="Edit" href="#edit-profile" data-toggle="modal">
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="courses">
+						<div id="course-sort">
+
+							<select class="course-sort2">
+								<option>All Courses</option>
+								<option>Active Courses</option>
+								<option>A-Z</option>
+							</select>
+						</div>
+						<div id="course-list">
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<span class="course-title">Meta Physics</span>
+									<span class="course-detail"><button type="button" class="btn btn-default" data-toggle="modal" href="#course-detail">Details</button></span>
+									<span class="join-class"><button type="button" class="btn btn-default"><i class="glyphicon glyphicon-plus-sign"></i></button></span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<span class="course-title">Introduction to java programming</span>
+									<span class="course-detail"><button type="button" class="btn btn-default" data-toggle="modal" href="#course-detail">Details</button></span>
+									<a href="class.html">
+									<span class="join-class"><button type="button" class="btn btn-default">Class</button></span></a>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<span class="course-title">Karate</span>
+									<span class="course-detail"><button type="button" class="btn btn-default" data-toggle="modal" href="#course-detail">Details</button></span>
+									<span class="join-class"><button type="button" class="btn btn-default"><i class="glyphicon glyphicon-plus-sign"></i></button></span>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<span class="course-title">French</span>
+									<span class="course-detail"><button type="button" class="btn btn-default" data-toggle="modal" href="#course-detail">Details</button></span>
+									
+									<span class="join-class"><button type="button" class="btn btn-default"><i class="glyphicon glyphicon-plus-sign"></i></button></span>
+									
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<span class="course-title">Swahili</span>
+									<span class="course-detail"><button type="button" class="btn btn-default" data-toggle="modal" href="#course-detail">Details</button></span><a href="class.html">
+									<span class="join-class"><button type="button" class="btn btn-default">Class</button></span></a>
+								</div>
+							</div>
+						</div>
+
+						<div style="clear: both;"></div>
+
+						<div id="pagi">
+						<ul class="pagination pull-right">
+							<li><a href="#">&laquo;</a></li>
+							<li class="active"><a href="#course-list">1</a></li>
+							<li><a href="#course-list2">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">&raquo;</a></li>
+						</ul>
+						</div>
+
+					</div>
+					<div role="tabpanel" class="tab-pane" id="information">
+						<p>This is t o inform you of the management's decision to increase exam fees by 20%</p>
+						<p>This is t o inform you of the management's decision to increase exam fees by 20%</p>
+						<p>This is t o inform you of the management's decision to increase exam fees by 20%</p>
+						<p>This is t o inform you of the management's decision to increase exam fees by 20%</p>
+						<p>This is t o inform you of the management's decision to increase exam fees by 20%</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="modal fade" id="course-detail">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Course Details</h4>
+					</div>
+					<div class="modal-body">
+					learn the art of karate with this practical course learn the art of karate with this practical course learn the art of karate with this practical course learn the art of karate with this practical course
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<div id="footer">
+			<hr>
+		</div>
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- jQuery -->
+			<script src="js/jquery.min.js"></script>
+			<!-- Bootstrap JavaScript -->
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+	 		<script type="text/javascript" src="js/edsmart.js"></script>
+	 	</div>
+	</body>
+</html>
