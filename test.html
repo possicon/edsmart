@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>School test center</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">School Management Portal V1</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">Courses</a></li>
+        <li><a href="#contact">Teachers</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav> <!-- navbar ends here -->
+
+<div class="container body-margin-top">
+  <div class="row">
+
+    <div class="col-sm-10">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Select Assessment Type
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Assignment</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Test</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Examination</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-2">
+      <a href="#" class="btn btn-default" role="button">View Result</a>
+    </div>
+  </div>
+
+  <div style="margin-top: 2rem"></div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-sm-6">
+            <form class="form-inline">
+              <div class="form-group">
+                <label for="title">Title</label><br>
+                    <input type="text" maxlength="30" size="50" class="form-control" placeholder="Title">
+              </div>
+            </form>
+          </div>
+
+          <div class="col-sm-6">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <div>
+                  <label for="description">Description</label>
+                  <textarea class="form-control" name="description" id="description" cols="10" rows="5" placeholder="Enter description of assessment"></textarea>
+                </div>
+              </div>
+              <input type="button" class="btn btn-primary pull-right" value="Save for Later">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+  <div class="row question_row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-sm-6">
+            <div class="input-group">
+            <span>
+              1 <input type="checkbox">
+            </span>
+              <form class="form-inline">
+                <div class="form-group">
+                  <label for="title">Question</label><br>
+                  <input type="text" maxlength="30" size="50" class="form-control" placeholder="Title">
+                </div>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <div>
+                      <label for="description">Description</label>
+                      <textarea class="form-control" name="description" id="description" cols="40" rows="5" placeholder="Enter description of assessment"></textarea>
+                    </div>
+                  </div>
+                </form>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <a type="button" class="btn btn-danger remove_question pull-right">X</a>
+            <form action="#" method="post" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Choose image/video file.</p>
+              </div>
+              <div class="form-group">
+                <label for="title">Duration</label><br>
+                <input type="number" maxlength="3" max="3" min="1" size="50" class="form-control" placeholder="Enter question duration">
+              </div>
+              <div class="form-group">
+                <label for="title">Score</label><br>
+                <input type="number" maxlength="3" max="3" min="0" size="50" class="form-control" placeholder="Enter question score">
+              </div>
+            </form>
+          </div>
+
+          <hr style="border: 1px dashed grey; opacity: 0.3"/>
+
+          <div class="col-sm-6">
+            <label for="title">Options and Answer</label>
+
+              <p class="input-group">
+                <span class="input-group-addon">A</span>
+                  <input type="text" class="form-control">
+                <span class="input-group-addon">
+                  <input type="checkbox" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
+                </span>
+              </p>
+
+              <p class="input-group">
+                <span class="input-group-addon">B</span>
+                <input type="text" class="form-control">
+                 <span class="input-group-addon">
+                  <input type="checkbox" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
+                </span>
+              </p>
+
+            <p class="input-group">
+              <span class="input-group-addon">C</span>
+              <input type="text" class="form-control">
+               <span class="input-group-addon">
+                  <input type="checkbox" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
+                </span>
+            </p>
+
+            <p class="input-group">
+              <span class="input-group-addon">D</span>
+              <input type="text" class="form-control">
+               <span class="input-group-addon">
+                  <input type="checkbox" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
+                </span>
+            </p>
+
+            <p class="input-group">
+              <span class="input-group-addon">E</span>
+              <input type="text" class="form-control">
+               <span class="input-group-addon">
+                  <input type="checkbox" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
+                </span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <a style="margin-bottom: 50px; margin-left: 1rem;" type="button" class="btn btn-success pull-right add_question">Add Question</a>
+      <a style="margin-bottom: 50px;" type="button" class="btn btn-primary pull-right">Save</a>
+
+    </div>
+  </div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/ext.js"></script>
+<!--<script type="text/javascript" src="js/add.js"></script>-->
+</body>
+</html>
