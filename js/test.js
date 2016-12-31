@@ -6,9 +6,9 @@ var template = $('.section .question_row:first').clone();
 var sectionsCount = 1;
 
 $('body').on('click', '.add_question', function(){
-   sectionsCount++; //increase count
+    sectionsCount++; //increase count
 
-   //loop through each input
+    //loop through each input
     var section = template.clone().find(':input').each(function () {
         //set new var id number
         var newId = this.id + sectionsCount;
@@ -29,10 +29,9 @@ $('.section').on('click', 'a.remove_question', function () {
     var confirm_delete = confirm("Sure to delete?");
     if(confirm_delete){
         $(this).parent().fadeOut(300, function () {
-            $(this).parent().parent().remove();
+            $(this).parent().parent().empty();
             return false;
         });
     }
     return false;
 });
-

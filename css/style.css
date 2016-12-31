@@ -24,5 +24,19 @@
 	text-align: center;
 	padding-top: 1.2em;
 	width: 50%;
+}
 
+.col-sm-2 .preview_question {
+	border-color: #0099CC;
+	background-color: transparent;
+}
+
+.col-sm-2 .preview_question:hover {
+	background-color:  #0099CC;
+	color: whitesmoke;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
 }

@@ -15,6 +15,20 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <script>
+    var counter = 1;
+
+    $(document).ready(function() {
+
+      $("#courses").click(function(){
+//        counter++;
+        alert('works');
+//        $(".theCount").text(counter);
+
+      });
+
+    });
+  </script>
 </head>
 <body>
 <!-- Fixed navbar -->
@@ -32,7 +46,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">Courses</a></li>
+        <li><a href="#" id="courses">Courses</a></li>
         <li><a href="#contact">Teachers</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -52,26 +66,25 @@
 </nav> <!-- navbar ends here -->
 
 <div class="container body-margin-top">
+  <div class="theCount">1</div>
+
   <div class="row">
 
     <div class="col-sm-10">
-      <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Select Assessment Type
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a href="#">Assignment</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Test</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Examination</a></li>
-        </ul>
+      <div class="form-group" style="width: 15em;">
+        <select class="form-control" id="assessment_type">
+          <option value="select_assessment" selected>Select assessment type</option>
+          <option value="test">Test</option>
+          <option value="assignment">Assignment</option>
+          <option value="exam">Exam</option>
+        </select>
       </div>
     </div>
 
     <div class="col-sm-2">
-      <a href="#" class="btn btn-default" role="button">View Result</a>
+
+        <input type="button" class="btn btn-default preview_question" role="button" value="Preview questions"/>
+
     </div>
   </div>
 
@@ -95,7 +108,7 @@
               <div class="form-group">
                 <div>
                   <label for="description">Description</label>
-                  <textarea class="form-control" name="description" id="description" cols="10" rows="5" placeholder="Enter description of assessment"></textarea>
+                  <textarea class="form-control" name="description"  cols="10" rows="5" placeholder="Enter description of assessment"></textarea>
                 </div>
               </div>
               <input type="button" class="btn btn-primary pull-right" value="Save for Later">
@@ -115,8 +128,16 @@
           <div class="col-sm-6">
             <div class="input-group">
             <span>
-              1 <input type="checkbox">
+              <div class="theCount">1</div>
+              <input type="checkbox">
             </span>
+              <div class="form-group" style="width: 29em;">
+                <label for="question_type">Question Type </label>
+                <select class="form-control" id="question_type">
+                  <option value="objective" selected>Objective</option>
+                  <option value="theory">Theory</option>
+                </select>
+              </div>
               <form class="form-inline">
                 <div class="form-group">
                   <label for="title">Question</label><br>
@@ -126,7 +147,7 @@
                   <div class="form-group">
                     <div>
                       <label for="description">Description</label>
-                      <textarea class="form-control" name="description" id="description" cols="40" rows="5" placeholder="Enter description of assessment"></textarea>
+                      <textarea class="form-control" name="description" id="description" cols="41" rows="3" placeholder="Enter description of assessment"></textarea>
                     </div>
                   </div>
                 </form>
@@ -155,13 +176,13 @@
           <hr style="border: 1px dashed grey; opacity: 0.3"/>
 
           <div class="col-sm-6">
-            <label for="title">Options and Answer</label>
+            <label>Options and Answer</label>
 
               <p class="input-group">
                 <span class="input-group-addon">A</span>
                   <input type="text" class="form-control">
                 <span class="input-group-addon">
-                  <input type="checkbox" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
+                  <input type="radio" name="question_answer"  data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
                 </span>
               </p>
 
@@ -169,7 +190,7 @@
                 <span class="input-group-addon">B</span>
                 <input type="text" class="form-control">
                  <span class="input-group-addon">
-                  <input type="checkbox" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
+                  <input type="radio" name="question_answer" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
                 </span>
               </p>
 
@@ -177,7 +198,7 @@
               <span class="input-group-addon">C</span>
               <input type="text" class="form-control">
                <span class="input-group-addon">
-                  <input type="checkbox" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
+                  <input type="radio" name="question_answer" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
                 </span>
             </p>
 
@@ -185,7 +206,7 @@
               <span class="input-group-addon">D</span>
               <input type="text" class="form-control">
                <span class="input-group-addon">
-                  <input type="checkbox" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
+                  <input type="radio" name="question_answer" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
                 </span>
             </p>
 
@@ -193,7 +214,7 @@
               <span class="input-group-addon">E</span>
               <input type="text" class="form-control">
                <span class="input-group-addon">
-                  <input type="checkbox" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
+                  <input type="radio" name="question_answer" data-toggle="tooltip" data-placement="right" title="Tick as correct answer">
                 </span>
             </p>
           </div>
@@ -220,7 +241,7 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/ext.js"></script>
-<!--<script type="text/javascript" src="js/add.js"></script>-->
+<script type="text/javascript" src="js/test.js"></script>
+<!--<script type="text/javascript" src="js/ext.js"></script>-->
 </body>
 </html>

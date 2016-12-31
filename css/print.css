@@ -1,0 +1,34 @@
+.body-margin-top {
+    margin-top: 5em;
+}
+
+.center_align {
+    margin: auto;
+    width: 50%;
+}
+
+.center_align + h1 {
+    margin: auto;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+}
+
+#avatar {
+    text-align: center;
+    padding-top: 1.2em;
+    width: 50%;
+}
+
+@media print {
+    .print_hide * {
+        visibility: hidden;
+        display: none !important;
+    }
+}
