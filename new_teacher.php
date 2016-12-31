@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<div class="ccontainer">
+	<div class="container">
 		<div class="row top">
 			<div class="col-lg-4">
 				<span class="dashboard"> Principal's Dashboard </span>
@@ -43,9 +43,24 @@
 				 	<h4> Principal's Name</h4>
 				</div> <br>
 
-				<input type="search" name="" id="input" placeholder="search a an action here.." class="form-control search_bar" id="search_bar" value="" required="required" title=""> <br>
-				<h5 id= "title">MAIN MENU</h5>
-					<div id="teacher_actions">
+				<input type="search" name="" id="input" placeholder="search a menu item here.." class="form-control search_bar" id="search_bar" value="" required="required" title=""> <br>
+			<div class="dropdown" id="teacher_actions"  >
+						<button type="button" class="btn btn-success glyphicon glyphicon-user dropdown-toggle" id="dropDownMenu1" data-toggle="dropdown">
+								Manage Teacher
+								<span class="caret"></span>
+						</button>
+
+						<ul class="dropdown-menu" id="dropdown" role"menu" aria-labelledby="dropDownMenu1">
+							<li role="presentation"><a class="glyphicon glyphicon-edit"  role="menuitem" tabindex="1" href="edit_teacher.php"> Edit Teacher</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-remove" data-toggle="modal" role="menuitem" tabindex="2" href="#modal-id"> Suspend Teacher</a></li>
+							<li role="presentation"><a  class="glyphicon glyphicon-search" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-id"> View Teacher</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-plus" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-id1"> Add Course Content</a></li>
+							<li role="presentation">
+
+
+						</ul>
+					</div>
+					<!-- <div id="teacher_actions">
 							
 
 						
@@ -57,10 +72,10 @@
 
 
 							</div><br>
-							<div id="check5_teacher"><a href="" > <span class="glyphicon glyphicon-plus"></span>Add Course Content</a></div>
+							<div id="check5_teacher"><a data-toggle="modal" href="#modal-id1" > <span class="glyphicon glyphicon-plus"></span>Add Course Content</a></div>
 
 
-					</div> <!-- end of principal actions or links-->
+					</div> --> <!-- end of principal actions or links-->
 			</div><!-- end of col 3 aside element -->
 			<div class="col-lg-3 status"> 
 				<ol class="breadcrumb">
@@ -132,6 +147,7 @@
 				</form>	
 
 			</div>
+
 			<!-- triger search start -->
 			<form>
 					<div class="modal fade" id="modal-id">
@@ -169,6 +185,50 @@
 			</div>			
 			 </div>
 			</form><!-- triger search end -->
+
+
+			<form>
+						<div class="modal fade" id="modal-id1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<center><h4 class="modal-title glyphicon glyphicon-user" ><b id="label1"> Teacher's Login</b></h4></center>
+								</div>
+								<div class="modal-body">						
+									
+										
+									
+										<div class="form-group">
+											<label for="" id="label1">Username</label>
+											<input type="text" class="form-control" id="" placeholder="Teacher username here..">
+										</div>
+										<div class="form-group">
+											<label for="" id="label1">Password</label>
+											<input type="text" class="form-control" id="" placeholder="Teacher password here..">
+										</div>
+										<div class="form-group">
+											<div class="checkbox">
+											 	<label id="label1">
+											 		<input type="checkbox" value="">
+											 		Remember Me!
+											 	</label>
+											 	<img src="img/lock.jpg" width="70" height="70" class="img-responsive" alt="Padlock Image">
+											 </div> 
+										</div>
+							
+															
+								</div>
+								<div class="modal-footer">
+									<center> <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+									<a href="teachers_dashboard.php" class="btn btn-success">Login</a>
+			 </center>						
+								</div>
+							</div>
+						</div>
+				</div>			
+				 </div>
+				</form><!-- triger search end -->
 		</div><!-- end of row gray-->
 </div><!-- end of container -->
  <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>

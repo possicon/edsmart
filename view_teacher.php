@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<div class="ccontainer">
+	<div class="container">
 		<div class="row top">
 			<div class="col-lg-4">
 				<span class="dashboard"> Principal's Dashboard </span>
@@ -44,24 +44,29 @@
 				</div> <br>
 
 				<input type="search" name="" id="input" placeholder="search a an action here.." class="form-control search_bar" id="search_bar" value="" required="required" title=""> <br>
-				<h5 id= "title">MAIN MENU</h5>
-					<div id="teacher_actions">
-							<div id="check1_teacher"><a href="" >Add New Teacher</a></div><br>
-
-						
-							<div id="check2_teacher"><a href="" >Edit Teacher</a></div> <br>
-							<div id="check3_teacher"><a href="" >Delete Teacher</a></div><br>
-							
-							<div id="check5_teacher"><a href="" >Add Course Content</a></div>
-
-
-					</div> <!-- end of principal actions or links-->
-			</div><!-- end of col 3 aside element -->
-				<div class=""> 
-					<center><button class="btn btn-success">
-							<span class="glyphicon glyphicon-user"></span> <span class="glyphicon glyphicon-a"></span>All Teachers in Computer Science Department
-							
+	<div class="dropdown" id="teacher_actions"  >
+						<button type="button" class="btn btn-success glyphicon glyphicon-user dropdown-toggle" id="dropDownMenu1" data-toggle="dropdown">
+								Manage Teacher
+								<span class="caret"></span>
 						</button>
+
+						<ul class="dropdown-menu" id="dropdown" role"menu" aria-labelledby="dropDownMenu1">
+							<li role="presentation" id=""><a class="glyphicon glyphicon-plus"   role="menuitem" tabindex="1" href="new_teacher.php"> Add New Teacher</a></li>
+								
+							<li role="presentation" id="edit_link"><a class="glyphicon glyphicon-edit"   role="menuitem" tabindex="1" href="edit_teacher.php"> Edit Teacher</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-remove" data-toggle="modal" role="menuitem" tabindex="2" href="#modal-search"> Suspend Teacher</a></li>
+							<li role="presentation"><a  class="glyphicon glyphicon-search" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-search"> View Teacher</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-plus" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-login"> Add Course Content</a></li>
+							<li role="presentation">
+
+
+						</ul>
+					</div>		</div><!-- end of col 3 aside element -->
+				<div class=""> 
+					<center><label class="btn btn-success" id="all_teacher">
+							<span class="glyphicon glyphicon-user"></span>All Teachers in Computer Science Department
+							
+						<label/>
 					</center>
 				<div>
 				<!-- <div class="col-lg-3 list_of_teachers">
@@ -76,33 +81,33 @@
 					kkjs dkdfiij sjhjds sjfh djwhjjdsd ndjwsjdhsdhsdfh sdsd h dsd <br> bjs <br>
 				</div>
 				 -->
-				 <div class="teacher_pics">
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-						<div class="thumbnail">
-							<img data-src="#" class="teacher_img" src="img/mine.jpg" alt="">
-							<div class="caption">
-								<span id="label1">Teachers Name:</span>
-								<p id="name1">
-									<b>Mr. Ajayi Nurudeen</b>
-								</p>
-								<span id="label1">Department:</span>
-								<p id="name2"><b >Engineering</b></p>
+				<div class="teacher_pics">
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
+							<div class="thumbnail">
+								<img data-src="#" class="teacher_img" src="img/mine.jpg" alt="">
+								<div class="caption">
+									<span id="label1">Teachers Name:</span>
+									<p id="name1">
+										<b>Mr. Ajayi Nurudeen</b>
+									</p>
+									<span id="label1">Department:</span>
+									<p id="name2"><b >Engineering</b></p>
+										
 									
-								
-								<span id="label1">Rank:</span>
-								<pid="name3">
-									<b>Senior</b>
-								</p><br>
-								
-								
-								<p>
-									<a href="edit_teacher.php" class="btn btn-xs btn-primary">Edit / Suspend</a>
-									<a href="#modal-id" data-toggle="modal" class="btn btn-xs btn-default">Mail Ajayi</a>
+									<span id="label1">Rank:</span>
+									<pid="name3">
+										<b>Senior</b>
+									</p><br>
+									
+									
+									<p>
+										<a href="edit_teacher.php" class="btn btn-xs btn-primary">Edit / Suspend</a>
+										<a href="#modal-id" data-toggle="modal" class="btn btn-xs btn-default">Mail Ajayi</a>
 
-								</p>
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
 					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
 						<div class="thumbnail">
 							<img data-src="#" class="teacher_img" src="img/mine.jpg" alt="">
@@ -183,7 +188,7 @@
 					</div>
 				</div>
 					<form>
-						<div class="modal fade" id="modal-id">
+						<div class="modal fade" id="modal-mail">
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header">
@@ -200,7 +205,7 @@
 										</div>
 										<div class="form-group">
 											<label for="" id="label1">To: </label>
-											<input type="text" class="form-control" id="" placeholder="" value="teachersmail@domain.com">
+											<label for="" >teachermail@domain.com</label>
 										</div>
 										<div class="form-group">
 											<label for="" id="label1">Subject: </label>
@@ -220,13 +225,95 @@
 				 </div>
 				</form><!-- triger search end -->
 
+				<form>
+					<div class="modal fade" id="modal-search">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Search Teacher</h4>
+							</div>
+							<div class="modal-body">
+														
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">--Select Faculty--</option>
+										<option value="">Faculty of Science</option>
+										<option value="">Faculty of Education</option>
+										<option value="">Faculty of Law</option>
+									</select><br>
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">--Select Department--</option>
+										<option value="">Engineering</option>
+										<option value="">Computer Science</option>
+										<option value="">Mathematics</option>
+										<option value="">Geography</option>
+									</select>
+								
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+									<a href="view_teacher.php" class="btn btn-success">Search</a>
+								
+								
+							</div>
+						</div>
+					</div>
+			</div>			
+			 </div>
+			</form><!-- triger search end -->
+
+
+				<div>
+					<form>
+						<div class="modal fade" id="modal-login">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<center><h4 class="modal-title glyphicon glyphicon-user" ><b id="label1"> Teacher's Login</b></h4></center>
+								</div>
+								<div class="modal-body">						
+									
+										
+									
+										<div class="form-group">
+											<label for="" id="label1">Username</label>
+											<input type="text" class="form-control" id="" placeholder="Teacher username here..">
+										</div>
+										<div class="form-group">
+											<label for="" id="label1">Password</label>
+											<input type="text" class="form-control" id="" placeholder="Teacher password here..">
+										</div>
+										<div class="form-group">
+											<div class="checkbox">
+											 	<label id="label1">
+											 		<input type="checkbox" value="">
+											 		Remember Me!
+											 	</label>
+											 	<img src="img/lock.jpg" width="70" height="70" class="img-responsive" alt="Padlock Image">
+											 </div> 
+										</div>
+							
+															
+								</div>
+								<div class="modal-footer">
+									<center> <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+									<a href="teachers_dashboard.php" class="btn btn-success">Login</a>
+			 </center>						
+								</div>
+							</div>
+						</div>
+				</div>			
+				 </div>
+				</form><!-- triger search end -->
 				
 
 		</div><!-- end of row gray-->
 </div><!-- end of container -->
  <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
-
  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="bootstrap/js/app.js"></script>
+
 
  </body>
  </html>

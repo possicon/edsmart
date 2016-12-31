@@ -5,6 +5,7 @@
 	padding-left: 30px;
 	font-size: 25px;
 }
+
 .messages{
 	background-color: #00CC33;
 	font-size: 19px;
@@ -24,7 +25,7 @@
 		color: #ffffff;
 }*/
 .aside{
-	background-color: #222d32;
+	background-color: #0099CC;
 	padding-left: 5px;
 	height: 700px;
 }
@@ -88,7 +89,8 @@
 	margin-left: 30px;
 	transition:1s;
 	color: #0099CC;
-}#link3:hover{
+}
+#link3:hover{
 	text-decoration: underline;
 	margin-left: 30px;
 	transition:1s;
@@ -126,9 +128,6 @@
 	border-radius: 5px
 }
 
-#b1_id{
-	
-}
 
 .block2{
 	background-color: #00cc66;
@@ -232,6 +231,9 @@
 	margin-top: 70px;
 	/*background-color: red;*/
 }
+.teacher_item{
+	margin-top: 20px;
+}
 .status{
 	margin-top: 15px;
 	font-size:20px;
@@ -246,7 +248,8 @@
 }
 .btn-danger{
 	margin-left: 20%;
-}.search_teacher{
+}
+.search_teacher{
 	margin-top: 60px;
 	background-color: #0099CC;
 	border-radius: 5px;

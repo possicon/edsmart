@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<div class="ccontainer">
+	<div class="container">
 		<div class="row top">
 			<div class="col-lg-4">
 				<span class="dashboard"> Principal's Dashboard </span>
@@ -44,7 +44,25 @@
 				</div> <br>
 
 				<input type="search" name="" id="input" placeholder="search a an action here.." class="form-control search_bar" id="search_bar" value="" required="required" title=""> <br>
-				<h5 id= "title">MAIN MENU</h5>
+					<div class="dropdown" id="teacher_actions"  >
+						<button type="button" class="btn btn-success glyphicon glyphicon-user dropdown-toggle" id="dropDownMenu1" data-toggle="dropdown">
+								Manage Teacher
+								<span class="caret"></span>
+						</button>
+
+						<ul class="dropdown-menu" id="dropdown" role"menu" aria-labelledby="dropDownMenu1">
+							<li role="presentation" id=""><a class="glyphicon glyphicon-plus"   role="menuitem" tabindex="1" href="new_teacher.php"> Add New Teacher</a></li>
+
+							<li role="presentation" id="edit_link"><a class="glyphicon glyphicon-edit"   role="menuitem" tabindex="1" href="#"> Edit Teacher</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-remove" data-toggle="modal" role="menuitem" tabindex="2" href="#modal-id"> Suspend Teacher</a></li>
+							<li role="presentation"><a  class="glyphicon glyphicon-search" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-id"> View Teacher</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-plus" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-id1"> Add Course Content</a></li>
+							<li role="presentation">
+
+
+						</ul>
+					</div>
+				<!-- <h5 id= "title">MAIN MENU</h5>
 					<div id="teacher_actions">
 							
 
@@ -57,15 +75,15 @@
 
 							</div><br>
 							<div id="check5_teacher"><a class="" data-toggle="modal" href='#modal-id'> </span> <span class="glyphicon glyphicon-plus"></span>Add Course Content</a>
-</div>
+</div> -->
 
 
-					</div> <!-- end of principal actions or links-->
+				 <!-- end of principal actions or links-->
 			</div><!-- end of col 3 aside element -->
 			<div class="col-lg-3 status"> 
 				<ol class="breadcrumb">
 									<li>
-										<a href="#">Home</a>
+										<a href="index.php">Home</a>
 									</li>
 									<li class="active" id="active_link">
 										<span href="#"  class="glyphicon glyphicon-edit"> Edit Teacher</span>
@@ -133,9 +151,48 @@
 
 			</div>
 			<!-- triger search start -->
+
+				<form>
+					<div class="modal fade" id="modal-id">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Search Teacher</h4>
+							</div>
+							<div class="modal-body">
+														
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">--Select Faculty--</option>
+										<option value="">Faculty of Science</option>
+										<option value="">Faculty of Education</option>
+										<option value="">Faculty of Law</option>
+									</select><br>
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">--Select Department--</option>
+										<option value="">Engineering</option>
+										<option value="">Computer Science</option>
+										<option value="">Mathematics</option>
+										<option value="">Geography</option>
+									</select>
+								
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+									<a href="view_teacher.php" class="btn btn-success">Search</a>
+								
+								
+							</div>
+						</div>
+					</div>
+			</div>			
+			 </div>
+			</form><!-- triger search end -->
+
+
 				<div>
 					<form>
-						<div class="modal fade" id="modal-id">
+						<div class="modal fade" id="modal-id1">
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header">
