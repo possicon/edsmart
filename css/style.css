@@ -10,6 +10,7 @@ body{
 	font-size:14px;
 	font-family:"Trebuchet MS",helvetica, sens-serif;
 	color:#333;
+	overflow-x:hidden;
 }
 
 a,a:active,
@@ -200,7 +201,6 @@ article#tabs section{
 	height:12em;
 	width:960px;
 	padding:10px 20px;
-	z-index:0;
 }
 
 article#tabs section h4{
@@ -216,6 +216,7 @@ article#tabs section h4{
 	border:1px #333 solid;
 	text-align:center;
 	cursor:pointer;
+	z-index:1;
 }
 
 article#tabs section:nth-child(2) h4{
@@ -233,10 +234,10 @@ article#tabs section:nth-child(4) h4{
 	margin-left:-3px;
 }
 
-article#tabs section:target,
-	   #tabs section:target h4{
+/*article#tabs section.tab,
+	   #tabs section.tab h4{
 	z-index:2;
-}
+}*/
 
 article#tabs section,
 	   #tabs section h4{
@@ -248,15 +249,18 @@ article#tabs section,
 }
 
 article#tabs section.active{
-	z-index:1;
 }
 
 article#tabs section.active h4{
-	box-shadow:inset 4px 4px 4px #0044FF;
+	box-shadow:inset 3px 3px 2px #333;
 	background:#0099FF;
 }
 article#tabs section.active h4 a{
 	color:#FFF;
+}
+
+article#tabs section.active p{
+	z-index:1;
 }
 
 article#tabs section p{
@@ -294,6 +298,7 @@ section.user_action button{
 
 /* ---- Slider styling start ---- */
 article#reviews{
+	clear:both;
 	background:#0099FF;
 	color:#FFF;
 	height:220px;
@@ -599,10 +604,6 @@ article.feature{
 	margin-top:20px;
 	/*border-bottom:1px dashed #333;*/
 }
-/*
-article.feature:last-child{
-	border-bottom:none;
-}*/
 
 article.feature div.features{
 	width:499px;
@@ -659,12 +660,175 @@ article.feature div.features p{
 }
 
 /* ---- Blog page ---- */
-section.blogger{
-	background-image:url(../images/blog.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-	height:580px;
-	color:#FFF;
+section.blogger div.container{
+	text-align:left;
+	padding-left:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+section.blogger div.container h1{
+	margin-top:0;
+	margin-bottom:10px;
+	text-transform:uppercase;
+}
+
+section.blogger div.container h5{
+	margin-bottom:0;
+	margin-top:10px;
+}
+
+section#main div.container article{
+	margin-bottom:30px;
+}
+
+section#main div.blog figure{
+	margin:0;
+	overflow:hidden;
+	position:relative;
+}
+
+section#main div.container figure#main-story{
+	height:550px;
+	width:1000px;
+}
+
+section#main figure#main-story img{
+	height:550px;
+	width:1000px;
+	transition:width 2s ease, height 2s ease;
+}
+
+section#main figure#main-story img:hover{
+	width:1020px;
+	height:570px;
+}
+
+figure#main-story div.main-story-overlay{
+	background:#333;
+	opacity:0.5;
+	width:100%;
+	height:120px;
+	position:absolute;
+	bottom:0%;
+}
+
+figure#main-story div.desc{
+	position:absolute;
+	bottom:0;
+	font-size:25px;
+	color:#fff;
+	margin-left:20px;
+}
+
+figure#main-story div.desc figcaption{
+	padding-top:20px;
+	margin-bottom:10px;
+	text-transform:uppercase;
+}
+
+figure#main-story div.desc div{
+	padding-top:10px;
+	margin-bottom:20px;
+}
+
+section#main div.container figure.old-story-one{
+	height:350px;
+	width:585px;
+}
+
+section#main div.container figure.old-story-two{
+	height:350px;
+	width:385px;
+}
+
+section#main figure.old-story-one img{
+	height:350px;
+	width:585px;
+	transition:width 2s ease, height 2s ease;
+}
+
+section#main figure.old-story-one img:hover{
+	width:605px;
+	height:370px;
+}
+
+section#main figure.old-story-two img{
+	height:350px;
+	width:385px;
+	transition:width 2s ease, height 2s ease;
+}
+
+section#main figure.old-story-two img:hover{
+	width:405px;
+	height:370px;
+}
+
+section#main div.container section article:first-child{
+	float:left;
+}
+
+section#main div.container section article:last-child{
+	float:right;
+}
+
+section#main div.container section div.sub-story-overlay{
+	background:#333;
+	opacity:0.5;
+	width:100%;
+	height:120px;
+	position:absolute;
+	bottom:0%;
+}
+
+section#main div.container section div.desc{
+	position:absolute;
+	bottom:0;
+	font-size:18px;
+	color:#fff;
+	margin-left:10px;
+}
+
+section#main div.container section div.desc figcaption{
+	padding-top:10px;
+	margin-bottom:10px;
+	text-transform:uppercase;
+}
+
+section#main div.container section div.desc div{
+	padding-top:10px;
+	margin-bottom:20px;
+}
+
+div#subscribe{
+	text-align:center;
+	clear:both;
+}
+
+div#subscribe form{
+	margin-bottom:30px;
+	height:49px;
+	width:470px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+div#subscribe form input{
+	border-radius:5px;
+	padding:8px;
+	font-size:20px;
+	border:1px solid #333;
+	margin-right:5px;
+	width:284px;
+	height:31px;
+	float:left;
+}
+
+div#subscribe form button{
+	font-size:16px;
+	padding:12px;
+	cursor:pointer;
+	float: right;
 }
 
 /* ---- Log In page ---- */
@@ -682,6 +846,11 @@ section.login_action{
 
 section.login_action div.container{
 	margin-top:100px;
+}
+
+section.welcome form{
+	width:245px;
+	margin:auto;
 }
 
 section.welcome form header#header{

@@ -17,7 +17,7 @@
 			</figure>
 			<div id="page-nav">
 				<div id="call">
-					<i class="fa fa-phone" style="color:#0099FF"></i><span>+234 - 810 - 612 - 9023</span>
+					<i class="fa fa-phone" style="color:#0099FF"></i><a href="tel:+234-810-612-9023"><span>+234 - 810 - 612 - 9023</span></a>
 				</div>
 				<nav id="menu">
 			 	 	<div class="hamburger is-closed">
@@ -54,22 +54,22 @@
 			<section class="login_action user_action welcome">
 				<div class="container">
 					<div class="overlay2"></div>
-					<form action="#" method="get" accept-charset="utf-8">
+					<form class="form-submit" action="#" method="post" accept-charset="utf-8">
 						<header id="header" class="">
 							Welcome Back
 						</header><!-- Form header -->
 						<div class="input-group">
 							<span class="fa fa-envelope login-icon"></span>
-							<input type="email" placeholder="Email Address" maxlength="30">
+							<input type="email" name="email" placeholder="Email Address" maxlength="30"><span id="emailerror"></span>
 						</div>
 						<div class="input-group">
 							<span class="fa fa-lock login-icon"></span>
-							<input type="password" placeholder="Password" maxlength="30">
+							<input type="password" name="password" placeholder="Password" maxlength="30"><span id="passworderror"></span>
 						</div>
 						<div class="input-group">
 							<p><a href="#">Forgot Password?</a></p>
 						</div>
-						<button type="submit" class="form-submit">Log In</button>
+						<button type="submit" name="submit">Log In</button>
 					</form>
 				</div>
 			</section><!-- First user-action section ends -->
