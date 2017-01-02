@@ -30,6 +30,23 @@ $(document).ready(function() {
 
   });
 
+  $('div.post').hide();
+  $('.read span:last-child').hide();
+  $('p.read').click(function() {
+    $(this).siblings('div.post').slideToggle('400');
+    $(this).children('span:first-child, span:last-child').toggle();
+  });
+
+  $("#spelling").typed({
+    strings: [
+              "smart <span class='fa fa-times' style='color:#0099FF'></span>",
+              "Smart <span class='fa fa-check' style='color:#0099FF'></span>"
+              ],
+    typeSpeed: 400,
+    backDelay: 2000,
+    loop:true
+  });
+
 	// var trigger = $('.hamburger'),
 	//    	isClosed = false;
 
@@ -60,16 +77,5 @@ $(document).ready(function() {
 	// $('.hamburger').click(function() {
 	// 	$('#myTopnav li').toggle(500);
 	// });
-	
 
-	// var howMany = 1;
-	// $('#more').click(function(){
-	//     howMany += 1;
-	//     $("#info").text(howMany);
-	// });
-	// $('#less').click(function(){
-	//     howMany -= 1;
-	//     $("#info").text(howMany);
-	// });
-	// $("#info").text(howMany);
-});
+	});

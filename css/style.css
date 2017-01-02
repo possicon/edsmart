@@ -13,7 +13,8 @@ body{
 	overflow-x:hidden;
 }
 
-a,a:active,
+a,
+a:active,
 a:hover,
 a:visited{
 	text-decoration:none;
@@ -28,6 +29,7 @@ article,
 figure,
 footer,
 header,
+main,
 nav,
 section{
 	display:block
@@ -991,4 +993,156 @@ section.support-body div:nth-of-type(even){
 	border-bottom:100px;
 	height:100px;
 	margin-top:80px;
+}
+
+/* ---- About Us page ---- */
+section.about p{
+	font-size:18px;
+	line-height:25px;
+}
+
+/* ---- Press page ---- */
+section#body{
+	height:4700px;
+	/*border-top:1px solid #333;*/
+}
+
+section#body nav#press-nav{
+	float:left;
+	width:250px;
+	position:fixed;
+}
+
+nav#press-nav figure{
+	margin:20px;
+}
+
+nav#press-nav figure img{
+	width:200px;
+	padding:5px;
+}
+
+nav#press-nav figure figcaption{
+	text-align:center;
+	text-transform:uppercase;
+	font-size:25px;
+	margin-top:10px;
+}
+
+nav#press-nav ul{
+	padding:0;
+	text-align:center;
+	font-size:18px;
+	margin:20px
+}
+
+nav#press-nav ul li{
+	padding:10px 0;
+	border-top:1px solid #333;
+}
+
+nav#press-nav ul li:last-child{
+	border-bottom:1px solid #333;
+}
+
+section#body main{
+	float:right;
+	width:750px;
+}
+
+section#body main section{
+	padding:20px
+}
+
+section#body main section h1{
+	font-size:20px;
+	margin:0 0 15px 0;
+}
+
+section#body main section#press article{
+	border-bottom:1px dashed #333;
+	padding-top:10px;
+}
+
+section#body main section#press h1{
+	font-size:20px;
+	margin:0 0 15px 0;
+}
+
+section#body main section#press h5{
+	font-size:14px;
+	margin:0 0 15px 0;
+}
+
+section#body main p.read{
+	color:#0099FF;
+	cursor:pointer;
+}
+
+section#body main p.read span{
+	display:block;
+}
+
+section#body main section#brand h1{
+	font-size:20px;
+	margin:0 0 15px 0;
+}
+
+section#body main section#brand p{
+	font-size:18px;
+}
+
+section#body main section#brand h1#correct{
+	font-size:100px;
+	text-align:center;
+	padding:100px 0 70px 0;
+}
+
+section#body section#brand h1#correct span.fa{
+	font-size:75px;
+}
+
+section#body section#brand div#images{
+	height:190px;
+}
+
+section#body section#brand figure{
+	float:left;
+	text-align:center;
+}
+
+section#body section#brand img{
+	width:150px;
+	height:110px;
+}
+
+section#body div#subscribe{
+	padding:150px 0;
+}
+
+section#social div.icon-body{
+	margin:auto;
+}
+
+section#social div.icon-body h4{
+	font-size:18px;
+	margin:10px 0;
+	text-align:center;
+}
+
+section#social div.icon-body div{
+	height:64px;
+	width:280px;
+	margin:auto;
+}
+
+section#social a{
+	display:block;
+	float:left;
+}
+
+section#social a img{
+	width:60px;
+	height:60px;
+	margin-right:10px;
 }
