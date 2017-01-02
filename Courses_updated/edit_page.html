@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Course List</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" >
+
+	<!-- *****Font Awesome CDN link***** -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- *****Main CSS Stylesheet***** -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+		<div class="container-fluid">
+			<div class="header page">
+				
+			</div>
+
+			<div class="academy">
+				<div id="hamburger">
+					<a href="index.html">
+						<div></div>
+						<div></div>
+						<div></div>
+					</a>
+				</div>
+
+				<p class="menu1">Edit Page</p>
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="section1 first col-xs-4 col-sm-2 col-md-2 col-lg-2">
+							<ul class="lists">
+								<li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+								<li><a href="viewCourses.html"><i class="fa fa-th"></i>View Course</a></li>
+								<li><a href="modification.html"><i class="fa fa-file-text-o"></i>Add Course</a></li>
+								<li><a href="edited.html"><i class="fa fa-pencil"></i>Edited Courses</a></li>
+								<li><a href="deleted.html"><i class="fa fa-trash"></i>Deleted Courses</a></li>
+							</ul> 
+						</div>
+
+						<div class="section1 second col-xs-7 col-xs-offset-1 col-sm-9 col-sm-offset-1 col-md-9 col-md-offset-1 col-lg-9 col-lg-offset-1">
+
+							<div id="form">
+								<form action="" method="POST" class="form-inline" role="form">
+								
+									<div class="form-group">
+<!--
+										<label for="Course Code">Course Code : </label> 
+										<input type="text" class="form-controllists" id=""  size="50px" placeholder="MTH 101" style="width: "><br>
+-->
+
+										<label for="Course Name">Course Name : </label> 
+										<input type="text"  class="form-controllists" id=""  size="50px" placeholder="General Mathematics 1"><br>
+
+										<label for="Course Description" class="descript">Course Description : </label>
+										<!-- <input type="text"  class="form-controllists" id=""  size="50px" placeholder="Enter description here"><br> -->
+										<textarea rows="7" cols="60" class="form-controltextedit" id="" 
+										placeholder="General Mathematics 1 comprises of the following topics such as Geometry, Arithmetic Progression, Geometric Progression, Probability, Series"></textarea><br>
+
+										<label for="Duration">Duration : </label>
+										<select class="duration one">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+											<option>6</option>
+										</select>
+										<select class="duration two">
+											<option>Timer</option>
+											<option>Seconds</option>
+											<option>Minutes</option>
+											<option>Hours</option>
+										</select>
+										<select class="duration three">
+											<option>Schedule</option>
+											<option>Daily</option>
+											<option>Twice a Week</option>
+											<option>Thrice a Week</option>
+											<option>Weekly</option>
+											<option>Monthly</option>
+										</select>
+
+										<br>
+										
+										<label for="Price">Price : </label>
+										<select class="duration four">
+                                            <option>Free</option>
+											<option>₦</option>
+											<option>£</option>
+											<option>$</option>
+										</select>
+
+										<input type="text" name="" class="form-controlamount" id="" placeholder=""><br>
+
+										<label for="Assigned Lecturer">Assigned Lecturer  : </label>
+										<select class="form-controllists">
+											<option>-- Assign a lecturer --</option>
+											<option>Mark Zuckerberg</option>
+											<option>Sheriff Shittu</option>
+											<option>Samson Iyanda</option>
+										</select><br>
+										<!-- <input type="text" name="" class="form-controllists" id="" placeholder="Assign a lecturer"> -->
+
+										<label for="Status">Status : </label>
+										
+										<input type="radio" name="" class="form-controldot" id="" placeholder="">
+										<label for="Suspend">Suspend</label>
+										
+										<input type="radio" name="" class="form-controldot" id="" placeholder="">
+										<label for="Unsuspend">Unsuspend</label>
+                                    
+                                        <button type="button" class="butn"><a href="viewCourses.html" class="button" onclick="alert('Successful Course Update')";>Save</a></button>
+										
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div style="clear: both;"></div>
+
+			<div class="footer page area"></div>
+		</div>
+
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/courselist.js"></script>
+
+</body>
+</html>
+
+
+
