@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<div class="ccontainer">
+	<div class="container">
 		<div class="row top">
 			<div class="col-lg-4">
 				<span class="dashboard"> Principal's Dashboard </span>
@@ -45,21 +45,47 @@
 
 				<input type="search" name="" id="input" placeholder="search a an action here.." class="form-control search_bar" id="search_bar" value="" required="required" title=""> <br>
 				<h5 id= "title">MAIN MENU</h5>
-					<div id="teacher_actions">
-							<div id="check1_teacher"><a href="" ><span class="glyphicon glyphicon-plus"></span> <span class="glyphicon glyphicon-a"></span>Add New Teacher</a></div><br>
+					<div class="dropdown" id="teacher_actions"  >
+						<div class="glyphicon glyphicon-ok"></div>
+						<button type="button" class="btn btn-success glyphicon glyphicon-user dropdown-toggle" id="dropDownMenu1" data-toggle="dropdown">
+								Manage Teacher
+								<span class="caret"></span>
+						</button>
 
+						<ul class="dropdown-menu" id="dropdown" role"menu" aria-labelledby="dropDownMenu1">
+							<li role="presentation" id=""><a class="glyphicon glyphicon-plus"   role="menuitem" tabindex="1" href="new_teacher.php"> Add New Teacher</a></li>
+
+							<li role="presentation" id="edit_link"><a class="glyphicon glyphicon-edit"   role="menuitem" tabindex="1" href="edit_teacher.php"> Edit Teacher</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-remove" role="menuitem" tabindex="2" href="edit_teacher.php"> Suspend Teacher</a></li>
+							<li role="presentation"><a  class="glyphicon glyphicon-search" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-search"> View Teacher</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-plus" data-toggle="modal" role="menuitem" tabindex="3" href="teachers_dashboard.php"> Add Course Content</a></li>
+							<li role="presentation">
+
+
+
+						</ul>
+					</div>
+					<div class="dropdown" id="teacher_actions"  >
+						<div class="glyphicon glyphicon-ok"></div>
+						<button type="button" class="btn btn-success glyphicon glyphicon-user dropdown-toggle" id="dropDownMenu1" data-toggle="dropdown">
+								Manage Student
+								<span class="caret"></span>
+						</button>
+
+						<ul class="dropdown-menu" id="dropdown" role"menu" aria-labelledby="dropDownMenu1">
+							<li role="presentation"><a class="glyphicon glyphicon-eye-open"  role="menuitem" tabindex="1" href="#"> View Student</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-envelope" data-toggle="modal" role="menuitem" tabindex="3" href="#modal_mail"> Mail Student </a></li>
+
+							<li role="presentation">
+						</ul>
 						
-							<div id="check2_teacher"><a href="" ><span class="glyphicon glyphicon-edit"></span> <span ></span>Edit Teacher</a></div> <br>
-							<div id="check3_teacher"><a href="" ><span class="glyphicon glyphicon-remove"></span> <span ></span>Delete Teacher</a></div><br>
-							
-							<div id="check5_teacher"><a href="view_student.php" >View Student</a></div>
+					</div>
 
-
-					</div> <!-- end of principal actions or links-->
 			</div><!-- end of col 3 aside element -->
+
 				<div class=""> 
 					<center><button class="btn btn-success">
-							<span class="glyphicon glyphicon-book"></span> <span class="glyphicon glyphicon-a"></span>List of My Courses
+							<span class="glyphicon glyphicon-book"></span> <span class="glyphicon glyphicon-a"></span>List of Students in this Course
 							
 						</button>
 					</center>
@@ -86,24 +112,24 @@
 								<td>Nurudeen</td>
 								<td>12/0004</td>
 								 
-								 <td> <a class="btn btn-default" href="" >ajayi@gmail.com </td>
+								 <td> <a class="btn btn-default" data-toggle="modal" href="#modal-mail" >ajayi@gmail.com</a> </td>
 								<td> <button type="button" class="btn btn-default">070-1245-114-444</button> </td>
 							</tr>
 							<tr>
-								<td>2</td> <td>Ajayi</td> 
-								<td>Nurudeen</td>
+								<td>2</td> <td>Olawale</td> 
+								<td>Ibitoye</td>
 								<td>12/0004</td>
 								 
-								 <td> <a class="btn btn-default" href="" >ajayi@gmail.com </td>
+								 <td> <a class="btn btn-default" data-toggle="modal" href="#modal-mail" >olawale@gmail.com</a> </td>
 								 
-								<td> <button type="button" class="btn btn-default">070-1245-114-444</button> </td>
+								<td> <button type="button" data-toggle="modal" class="btn btn-default">070-1245-114-444</button> </td>
 							</tr>
 							<tr>
-								<td>3</td> <td>Ajayi</td> 
-								<td>Nurudeen</td>
-								<td>12/0004</td>
+								<td>3</td> <td>Wizubizu </td> 
+								<td>Adejumobi</td>
+								<td>12/0005</td>
 								 
-								 <td> <a class="btn btn-default" href="" >ajayi@gmail.com </td>
+								 <td> <a class="btn btn-default" data-toggle="modal" href="#modal-mail" >wizu@gmail.com </td>
 								 
 								<td> <button type="button" class="btn btn-default">070-1245-114-444</button> </td>
 							</tr>
@@ -112,13 +138,91 @@
 						</tbody>
 					</table>
 				</div>
-				 
+				 					<form>
+						<div class="modal fade" id="modal-mail">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<center><h4 class="modal-title glyphicon glyphicon-user" ><b id="label1"> Messagel Teacher</b></h4></center>
+								</div>
+								<div class="modal-body">						
+									
+										
+									
+										<div class="form-group">
+											<label for="" id="label1">From: </label>
+											<label for="" >principalmail@domain.com</label>
+										</div>
+										<div class="form-group">
+											<label for="" id="label1">To: </label>
+											<!-- <label id="mail_name" for="" >ajayi@domain.com</label> -->
+											<input type="text" name="" id="input_mail" disabled class="form-control" value="ajayinurudeen@gmail.com" required="required" pattern="" title="">
+										</div>
+										<div class="form-group">
+											<label for="" id="label1">Subject: </label>
+											<textarea name="" id="input" class="form-control" rows="3" required="required" placeholder="You Message Goes Here.."></textarea>
+										</div>
+							
+															
+								</div>
+								<div class="modal-footer">
+									<center> <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+									<a href="" id="send_message" class="btn btn-success">Send</a>
+			 				</center>						
+								</div>
+							</div>
+						</div>
+				</div>			
+				 </div>
+				</form><!-- triger search end -->
+
+				<form>
+					<div class="modal fade" id="modal-search">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Search Teacher</h4>
+							</div>
+							<div class="modal-body">
+														
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">--Select Faculty--</option>
+										<option value="">Faculty of Science</option>
+										<option value="">Faculty of Education</option>
+										<option value="">Faculty of Law</option>
+									</select><br>
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">--Select Department--</option>
+										<option value="">Engineering</option>
+										<option value="">Computer Science</option>
+										<option value="">Mathematics</option>
+										<option value="">Geography</option>
+									</select>
+								
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+									<a href="view_student.php" class="btn btn-success">Search</a>
+								
+								
+							</div>
+						</div>
+					</div>
+			</div>			
+			 </div>
+			</form>
+
 
 		</div><!-- end of row gray-->
 </div><!-- end of container -->
  <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
 
  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+ <script type="text/javascript" src="bootstrap/js/app.js"></script>
+
 
  </body>
  </html>

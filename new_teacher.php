@@ -44,21 +44,37 @@
 				</div> <br>
 
 				<input type="search" name="" id="input" placeholder="search a menu item here.." class="form-control search_bar" id="search_bar" value="" required="required" title=""> <br>
-			<div class="dropdown" id="teacher_actions"  >
+						<div class="dropdown" id="teacher_actions"  >
+									<div class="glyphicon glyphicon-ok"></div>
+
+									<button type="button" class="btn btn-success glyphicon glyphicon-user dropdown-toggle" id="dropDownMenu1" data-toggle="dropdown">
+											Manage Teacher
+											<span class="caret"></span>
+									</button>
+
+									<ul class="dropdown-menu" id="dropdown" role"menu" aria-labelledby="dropDownMenu1">
+										<li role="presentation"><a class="glyphicon glyphicon-edit"  role="menuitem" tabindex="1" href="edit_teacher.php"> Edit Teacher</a></li>
+										<li role="presentation"><a class="glyphicon glyphicon-remove" data-toggle="modal" role="menuitem" tabindex="2" href="#modal-search_teacher"> Suspend Teacher</a></li>
+										<li role="presentation"><a  class="glyphicon glyphicon-search" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-search_teacher"> View Teacher</a></li>
+										<li role="presentation"><a class="glyphicon glyphicon-pencil" data-toggle="modal" role="menuitem" tabindex="2" href="#modal-id1"> Mail Student</a></li>
+										<li role="presentation">
+									</ul>
+
+						</div>
+					<div class="dropdown" id="teacher_actions"  >
+						<div class="glyphicon glyphicon-ok"></div>
 						<button type="button" class="btn btn-success glyphicon glyphicon-user dropdown-toggle" id="dropDownMenu1" data-toggle="dropdown">
-								Manage Teacher
+								Manage Student
 								<span class="caret"></span>
 						</button>
 
 						<ul class="dropdown-menu" id="dropdown" role"menu" aria-labelledby="dropDownMenu1">
-							<li role="presentation"><a class="glyphicon glyphicon-edit"  role="menuitem" tabindex="1" href="edit_teacher.php"> Edit Teacher</a></li>
-							<li role="presentation"><a class="glyphicon glyphicon-remove" data-toggle="modal" role="menuitem" tabindex="2" href="#modal-id"> Suspend Teacher</a></li>
-							<li role="presentation"><a  class="glyphicon glyphicon-search" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-id"> View Teacher</a></li>
-							<li role="presentation"><a class="glyphicon glyphicon-plus" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-id1"> Add Course Content</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-eye-open"  data-toggle="modal" role="menuitem" tabindex="1" href="#modal-search_student"> View Student</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-pencil" role="menuitem" tabindex="2" href="view_student.php"> Mail Student</a></li>
+
 							<li role="presentation">
-
-
 						</ul>
+						
 					</div>
 					<!-- <div id="teacher_actions">
 							
@@ -100,7 +116,7 @@
 						<input type="text" class="form-control"/>
 					</div>
 					<div class="for-group">
-						<div> <label id="label3">Middle Name:</label> </div>
+						<div> <label id="label1">Middle Name:</label> </div>
 						<input type="text" class="form-control"/>
 					</div>
 					<div class="for-group">
@@ -150,12 +166,50 @@
 
 			<!-- triger search start -->
 			<form>
-					<div class="modal fade" id="modal-id">
+					<div class="modal fade" id="modal-search_student">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">Search Teacher</h4>
+								<h4 class="modal-title">Select Faculty of Student and Department</h4>
+							</div>
+							<div class="modal-body">
+														
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">--Select Faculty--</option>
+										<option value="">Faculty of Science</option>
+										<option value="">Faculty of Education</option>
+										<option value="">Faculty of Law</option>
+									</select><br>
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">--Select Department--</option>
+										<option value="">Engineering</option>
+										<option value="">Computer Science</option>
+										<option value="">Mathematics</option>
+										<option value="">Geography</option>
+									</select>
+								
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+									<a href="view_student.php" class="btn btn-success">Search</a>
+								
+								
+							</div>
+						</div>
+					</div>
+			</div>			
+			 </div>
+			</form><!-- triger search end -->
+
+
+				<form>
+					<div class="modal fade" id="modal-search_teacher">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Select Faculty and Department of Teacher</h4>
 							</div>
 							<div class="modal-body">
 														
@@ -184,7 +238,7 @@
 					</div>
 			</div>			
 			 </div>
-			</form><!-- triger search end -->
+			</form>
 
 
 			<form>
@@ -221,7 +275,7 @@
 								</div>
 								<div class="modal-footer">
 									<center> <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-									<a href="teachers_dashboard.php" class="btn btn-success">Login</a>
+									<a href="view_student.php" class="btn btn-success">Login</a>
 			 </center>						
 								</div>
 							</div>

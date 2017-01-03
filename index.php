@@ -50,9 +50,9 @@
 						<ul class="dropdown-menu" id="dropdown" role"menu" aria-labelledby="dropDownMenu1">
 							<li role="presentation"><a class="glyphicon glyphicon-book" role="menuitem" tabindex="1" href="#"> Manage Course List</a></li>
 							<li role="presentation"><a class="glyphicon glyphicon-user" role="menuitem" tabindex="2" href="new_teacher.php"> Manage Teacher</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="3" href="#">Class Management</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="4" href="#">Manage Student</a></li>
-							<li role="presentation"><a role="menuitem" tabindex="4" href="#">Moderate Result</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-user" role="menuitem" tabindex="3" href="#"> Class Management</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-user" role="menuitem" tabindex="4" data-toggle="modal" href="#modal-search"> Manage Student</a></li>
+							<li role="presentation"><a class="glyphicon glyphicon-pencil" role="menuitem" tabindex="4" href="#"> Moderate Result</a></li>
 
 
 						</ul>
@@ -114,6 +114,43 @@
 					<span id="text"> Undergraduate </span>
 					<div id="read_more"> <a href="#">Read More</a> </div>
 				</div>
+				<form>
+					<div class="modal fade" id="modal-search">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Search Teacher</h4>
+							</div>
+							<div class="modal-body">
+														
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">--Select Faculty--</option>
+										<option value="">Faculty of Science</option>
+										<option value="">Faculty of Education</option>
+										<option value="">Faculty of Law</option>
+									</select><br>
+									<select name="" id="input" class="form-control" required="required">
+										<option value="">--Select Department--</option>
+										<option value="">Engineering</option>
+										<option value="">Computer Science</option>
+										<option value="">Mathematics</option>
+										<option value="">Geography</option>
+									</select>
+								
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+									<a href="view_student.php" class="btn btn-success">Search</a>
+								
+								
+							</div>
+						</div>
+					</div>
+			</div>			
+			 </div>
+			</form><!-- triger search end -->
+
 			</div><!-- end of gray-box -->
 		</div><!-- end of row-->
 	</div><!-- end of container -->

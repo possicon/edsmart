@@ -52,7 +52,7 @@
 
 						<ul class="dropdown-menu" id="dropdown" role"menu" aria-labelledby="dropDownMenu1">
 							<li role="presentation" id=""><a class="glyphicon glyphicon-plus"   role="menuitem" tabindex="1" href="new_teacher.php"> Add New Teacher</a></li>
-								
+
 							<li role="presentation" id="edit_link"><a class="glyphicon glyphicon-edit"   role="menuitem" tabindex="1" href="edit_teacher.php"> Edit Teacher</a></li>
 							<li role="presentation"><a class="glyphicon glyphicon-remove" data-toggle="modal" role="menuitem" tabindex="2" href="#modal-search"> Suspend Teacher</a></li>
 							<li role="presentation"><a  class="glyphicon glyphicon-search" data-toggle="modal" role="menuitem" tabindex="3" href="#modal-search"> View Teacher</a></li>
@@ -102,7 +102,7 @@
 									
 									<p>
 										<a href="edit_teacher.php" class="btn btn-xs btn-primary">Edit / Suspend</a>
-										<a href="#modal-id" data-toggle="modal" class="btn btn-xs btn-default">Mail Ajayi</a>
+										<a href="#modal-mail" data-toggle="modal" class="btn btn-xs btn-default">Mail Ajayi</a>
 
 									</p>
 								</div>
@@ -114,13 +114,13 @@
 							<div class="caption">
 								<span id="label1">Teachers Name:</span>
 								<p id="name1">
-									<b>Mr. Ajayi Nurudeen</b>
+									<b>Mr. Olakunle Wahab</b>
 								</p>
 								<span id="label1">Department:</span>
 								<p id="name2"><b >Engineering</b></p>
 									
 								
-								<span id="label1">Rank:</span>
+								<span id="label1">Rank: </span>
 								<pid="name3">
 									<b>Senior</b>
 								</p><br>
@@ -205,11 +205,12 @@
 										</div>
 										<div class="form-group">
 											<label for="" id="label1">To: </label>
-											<label for="" >teachermail@domain.com</label>
+											<!-- <label id="mail_name" for="" >ajayi@domain.com</label> -->
+											<input type="text" name="" id="input_mail" disabled class="form-control" value="ajayinurudeen@gmail.com" required="required" pattern="" title="">
 										</div>
 										<div class="form-group">
 											<label for="" id="label1">Subject: </label>
-											<textarea name="" id="input" class="form-control" rows="3" required="required" placeholder="You Message Goes Here.."></textarea>
+											<textarea name="" id="input_msg" class="form-control" rows="3" required="required" placeholder="You Message Goes Here.."></textarea>
 										</div>
 							
 															
