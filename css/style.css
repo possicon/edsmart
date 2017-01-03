@@ -366,17 +366,45 @@ div#hide ul li p{
 
 div#hide ul li.firstanimation{
    animation:cycleone 15s linear infinite;
+   -webkit-animation:cycleone 15s linear infinite;
+   -moz-animation:cycleone 15s linear infinite;
 }
 
 div#hide ul li.secondanimation{
    animation:cycletwo 15s linear infinite;
+   -webkit-animation:cycletwo 15s linear infinite;
+   -moz-animation:cycletwo 15s linear infinite;
 }
 
 div#hide ul li.thirdanimation{
    animation:cyclethree 15s linear infinite;
+   -webkit-animation:cyclethree 15s linear infinite;
+   -moz-animation:cyclethree 15s linear infinite;
 }
 
 @keyframes cycleone{
+	0% { right:0; }
+	6.70% { right:0; }
+	26.6% { right:0; opacity:1; z-index:0; }
+	33.3% { right:650px; opacity:0; z-index:0; }
+	34.3% { right:-650px; opacity:0; z-index:-1; }
+	86.6% { right:-650px; opacity:0; z-index:0; }
+	93.3% { right:-650px; opacity:0; }
+	100.0%{ right:0px; opacity:1; }
+}
+
+@-webkit-keyframes cycleone{
+	0% { right:0; }
+	6.70% { right:0; }
+	26.6% { right:0; opacity:1; z-index:0; }
+	33.3% { right:650px; opacity:0; z-index:0; }
+	34.3% { right:-650px; opacity:0; z-index:-1; }
+	86.6% { right:-650px; opacity:0; z-index:0; }
+	93.3% { right:-650px; opacity:0; }
+	100.0%{ right:0px; opacity:1; }
+}
+
+@-moz-keyframes cycleone{
 	0% { right:0; }
 	6.70% { right:0; }
 	26.6% { right:0; opacity:1; z-index:0; }
@@ -398,7 +426,47 @@ div#hide ul li.thirdanimation{
 	100.0%{ right:-650px; opacity:0; z-index:-1; }
 }
 
+@-webkit-keyframes cycletwo{
+	0% { right:-650px; opacity:0; }
+	26.6% { right:-650px; opacity:0; }
+	33.3% { right:0; opacity:1; }
+	40.0% { right:0; opacity:1; }
+	59.9% { right:0; opacity:1; z-index:0; }
+	66.6% { right:650px; opacity:0; z-index:0; }
+	67.6% { right:-650px; opacity:0; z-index:-1; }
+	100.0%{ right:-650px; opacity:0; z-index:-1; }
+}
+
+@-moz-keyframes cycletwo{
+	0% { right:-650px; opacity:0; }
+	26.6% { right:-650px; opacity:0; }
+	33.3% { right:0; opacity:1; }
+	40.0% { right:0; opacity:1; }
+	59.9% { right:0; opacity:1; z-index:0; }
+	66.6% { right:650px; opacity:0; z-index:0; }
+	67.6% { right:-650px; opacity:0; z-index:-1; }
+	100.0%{ right:-650px; opacity:0; z-index:-1; }
+}
+
 @keyframes cyclethree{
+	0% { right:-650px; opacity:0; }
+	59.9% { right:-650px; opacity:0; }
+	66.6% { right:0; opacity:1; }
+	73.3% { right:0; opacity:1; }
+	93.2% { right:0; opacity:1; z-index:0; }
+	100.0%{ right:650px; opacity:0; z-index:0; }
+}
+
+@-webkit-keyframes cyclethree{
+	0% { right:-650px; opacity:0; }
+	59.9% { right:-650px; opacity:0; }
+	66.6% { right:0; opacity:1; }
+	73.3% { right:0; opacity:1; }
+	93.2% { right:0; opacity:1; z-index:0; }
+	100.0%{ right:650px; opacity:0; z-index:0; }
+}
+
+@-moz-keyframes cyclethree{
 	0% { right:-650px; opacity:0; }
 	59.9% { right:-650px; opacity:0; }
 	66.6% { right:0; opacity:1; }
@@ -698,6 +766,9 @@ section#main figure#main-story img{
 	height:550px;
 	width:1000px;
 	transition:width 2s ease, height 2s ease;
+	-webkit-transition:width 2s ease, height 2s ease;
+	-moz-transition:width 2s ease, height 2s ease;
+	-o-transition:width 2s ease, height 2s ease;
 }
 
 section#main figure#main-story img:hover{
@@ -882,6 +953,12 @@ section.welcome form input{
 	border:1px solid #F6F8FA;
 	border-top-right-radius:5px;
 	border-bottom-right-radius:5px;
+}
+
+section.welcome form span#emailerror,
+section.welcome form span#passworderror{
+	font-size:16px;
+	color:#FF0000;
 }
 
 section.welcome form p{
@@ -1152,25 +1229,25 @@ section#social a img{
 }
 
 .typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 1s infinite;
-    -moz-animation: blink 1s infinite;
-    animation: blink 1s infinite;
+    opacity:1;
+    -webkit-animation:cursor 1s infinite;
+    -moz-animation:cursor 1s infinite;
+    animation:cursor 1s infinite;
 }
 
-@keyframes blink{
+@keyframes cursor{
     0% { opacity:1; }
     50% { opacity:0; }
     100%{ opacity:1; }
 }
 
-@-webkit-keyframes blink{
+@-webkit-keyframes cursor{
     0% { opacity:1; }
     50% { opacity:0; }
     100%{ opacity:1; }
 }
 
-@-moz-keyframes blink{
+@-moz-keyframes cursor{
     0% { opacity:1; }
     50% { opacity:0; }
     100%{ opacity:1; }
