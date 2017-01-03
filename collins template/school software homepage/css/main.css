@@ -1,0 +1,173 @@
+body{
+	background-color: white;
+	width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+ul,li{
+	list-style-type: none;
+
+}
+a{
+	text-decoration: none;
+}
+/*header style*/
+#header{
+	width: 1100px;
+	height: 140px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+#headericons{
+	float: right;
+	margin-top: 5px;
+}
+#headericons li{
+	display: inline;
+	padding: 5px;
+	margin: 5px;
+}
+#img_logo{
+	width: 150px;
+	height: 160px;
+	padding-top: 10px;
+
+}
+#logo{
+	width: 150px;
+	height: 90px;
+	padding-top: 20px;
+}
+#header_list{
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 5px%;
+}
+#header_list li{
+	display: inline;
+	margin: 10px;
+	padding: 10px;
+
+}
+#header_list li a:hover{
+	margin-top: 80px;
+	text-decoration: none;
+	color: orange;
+}
+
+#text{
+	margin-top: 15%;
+	font-weight: bold;
+	font-family: serif;
+	color: orange;
+}
+#text h1{
+	margin-top: 40px;
+
+}
+
+#footer{
+	margin-top: 20%;
+	margin-bottom: 20px;
+}
+#s_l{
+	font-weight: bold;
+	font-size: 20px;
+	font-family: serif;
+	margin-top: 50px;
+}
+
+
+#form{
+	margin-left: 35%;
+	margin-top: 5%;
+	border: 1px solid grey;
+	height: 250px;
+	width: 350px;
+	border-radius: 4px;
+	text-align: center;
+	background-color: lightgray;
+}
+
+
+#lab{
+	margin-top: 40px;
+	margin-right: 40px;
+}
+
+#lab2{
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+#input3{
+	margin-right: 40px;
+	margin-top: 0px;
+}
+input{
+	border-radius: 4px;
+	margin-top: 20px;
+}
+button{
+	width: 150px;
+	height: 30px;
+	border-radius: 4px;
+	background-color: red;
+	opacity: 0.8;
+}
+#d_form{
+	display: block;
+	height: 400px;
+}
+#p_form{
+	display: block;
+	height: 500px;
+	margin-top: 50px;
+	border: 1px solid gray;
+	width: 700px;
+	margin-left: 20%;
+	border-radius: 8px;
+	background: lightgrey;
+}
+#p_form label{
+	margin-right: 30px;
+}
+#p_form #l_form{
+	margin-right: 40px;
+}
+
+#p_form #l_form2{
+	margin-right: 43px;
+}
+
+#p_form #l_form3{
+	margin-right: 133px;
+}
+
+#p_form #l_form4{
+	margin-right: 70px;
+}
+
+#p_form #l_form5{
+	margin-right: 50px;
+}
+
+
+#p_form #l_form6{
+	margin-right: -20px;
+}
+
+#p_form input, select{
+
+	margin-left: 100px;
+}
+select{
+	width: 170px;
+	margin-top: 20px;
+	margin-left: 25px;
+	padding: 1px;
+}
+
+#b_form{
+	margin-top: 30px;
+}
