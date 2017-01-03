@@ -29,7 +29,6 @@ article,
 figure,
 footer,
 header,
-main,
 nav,
 section{
 	display:block
@@ -1003,14 +1002,13 @@ section.about p{
 
 /* ---- Press page ---- */
 section#body{
-	height:4700px;
+	height:1770px;
 	/*border-top:1px solid #333;*/
 }
 
 section#body nav#press-nav{
 	float:left;
 	width:250px;
-	position:fixed;
 }
 
 nav#press-nav figure{
@@ -1045,54 +1043,54 @@ nav#press-nav ul li:last-child{
 	border-bottom:1px solid #333;
 }
 
-section#body main{
+section#body section#content{
 	float:right;
 	width:750px;
 }
 
-section#body main section{
+section#body section#content section{
 	padding:20px
 }
 
-section#body main section h1{
+section#body section#content section h1{
 	font-size:20px;
 	margin:0 0 15px 0;
 }
 
-section#body main section#press article{
+section#body section#content section#press article{
 	border-bottom:1px dashed #333;
 	padding-top:10px;
 }
 
-section#body main section#press h1{
+section#body section#content section#press h1{
 	font-size:20px;
 	margin:0 0 15px 0;
 }
 
-section#body main section#press h5{
+section#body section#content section#press h5{
 	font-size:14px;
 	margin:0 0 15px 0;
 }
 
-section#body main p.read{
+section#body section#content p.read{
 	color:#0099FF;
 	cursor:pointer;
 }
 
-section#body main p.read span{
+section#body section#content p.read span{
 	display:block;
 }
 
-section#body main section#brand h1{
+section#body section#content section#brand h1{
 	font-size:20px;
 	margin:0 0 15px 0;
 }
 
-section#body main section#brand p{
+section#body section#content section#brand p{
 	font-size:18px;
 }
 
-section#body main section#brand h1#correct{
+section#body section#content section#brand h1#correct{
 	font-size:100px;
 	text-align:center;
 	padding:100px 0 70px 0;
@@ -1118,10 +1116,16 @@ section#body section#brand img{
 
 section#body div#subscribe{
 	padding:150px 0;
+	margin:auto;
+}
+
+section#body div#subscribe{
+	width:304px;
 }
 
 section#social div.icon-body{
 	margin:auto;
+	padding:60px 0;
 }
 
 section#social div.icon-body h4{
@@ -1145,4 +1149,29 @@ section#social a img{
 	width:60px;
 	height:60px;
 	margin-right:10px;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100%{ opacity:1; }
+}
+
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100%{ opacity:1; }
+}
+
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100%{ opacity:1; }
 }
