@@ -1,0 +1,44 @@
+.blogbox{
+	border: 20px solid white;
+}
+
+.blog{
+	background-color: #515151;
+	padding-left: 0px;
+    padding-right: 0px;
+	background-color: white;
+	margin-right: 30px;
+    margin-left: 70px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 10px #888888;
+}
+.featured{
+	color: dimgrey;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.blog-title{
+	text-align: center;
+	color: #144476;
+	font-family: Georgia;
+	font-size: 30px;
+}
+.blog-text{
+	margin-left: 10px;
+	color: dimgrey;
+	font-size: 12px;
+}
+.btn{
+	background-color: #144476;
+	color: white;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.btn:hover{
+	color: #144476;
+	background-color: white;
+	border: 1px solid #144476;
+}

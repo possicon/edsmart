@@ -1,0 +1,37 @@
+.thumbnail{
+	background-color: #F7F7F9;
+}
+.main{
+	margin-top: 20px;
+}
+.solution_tab{
+	background-color: #515151;
+	height: 30%;
+	color: white;
+	text-align: center;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.solution_text{
+	color: black;
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: justify;
+}
+.btn{
+	background-color: #144476;
+	color: white;
+	border-radius: 10px;
+}
+.btn:hover{
+	background-color: white;
+	color: #144476;
+	border-color: #144476;
+}
+h6{
+	color: #144476;
+	font-weight: bolder;
+	font-size: 14px;
+}

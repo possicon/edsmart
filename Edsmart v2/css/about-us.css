@@ -1,0 +1,39 @@
+.main_body{
+	background-color: #F7F7F9;
+}
+h3{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+h4{
+	color: #144476;
+}
+.story_text{
+	text-align: justify;
+}
+.team_tab{
+	background-color: #144476;
+	color: white;
+	padding-left: 0;
+	padding-right: 0;
+}
+.profile_tab1{
+	text-align: center;
+	border: 5px solid white;
+	margin-left: 70px;
+	margin-right: 20px;
+}
+.profile_tab2{
+	text-align: center;
+	border: 5px solid white;
+	margin-left: 200px;
+	margin-right: 20px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	
+}
+.bottommost{
+	background-color: #F7F7F9;
+	height: 10px;
+}
